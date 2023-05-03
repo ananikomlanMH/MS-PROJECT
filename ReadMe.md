@@ -48,6 +48,7 @@
 ## About The Project
 
 ![Screen Shot][product-screenshot]
+![Screen Shot][product-screenshot2]
 
 ----------------------------------------------------------
 
@@ -78,6 +79,7 @@
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/komlan-mawulom-h-anani-b86a30219
 [product-screenshot]: assets/images/img.png
+[product-screenshot2]: assets/images/img_1.png
 [html]: https://img.shields.io/badge/HTML-dd4b25?style=for-the-badge&logo=html5&logoColor=white
 [css]: https://img.shields.io/badge/CSS3-1181d9?style=for-the-badge&logo=css3&logoColor=white
 [js]: https://img.shields.io/badge/JavaScript-efd81d?style=for-the-badge&logo=javascript&logoColor=white
