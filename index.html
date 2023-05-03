@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS PROJECTS</title>
+
+    <!--    Style-->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!--    Favicon-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+
+    <!--    Icons -->
+    <link rel="stylesheet" href="assets/css/uicons/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css">
+
+    <!--    JS Files --->
+        <script defer src="assets/js/dist/bundle.js"></script>
+</head>
+<body>
+
+<div class="nav_menu">
+    <div class="left_menu">
+        <div class="logo">
+            <a href="index.html" style="display:flex;align-items: center">
+                <img src="assets/images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="navs_links">
+            <li class="active"><a href="index.html">Projets</a></li>
+            <li><a href="enqueteur.html">Enquêteurs</a></li>
+            <li><a href="#">Tableaux</a></li>
+            <li><a href="#">Membres</a></li>
+            <li><a href="#">Paramètres</a></li>
+        </div>
+    </div>
+</div>
+<div class="document_countainer">
+
+    <div class="projets_wrapper">
+        <li class="add-box">
+            <div class="icon"><i class="fi-rr-plus"></i></div>
+            <p data-title="Nouveau projet">Nouveau projet</p>
+        </li>
+    </div>
+</div>
+
+<div id="JS_GenerateForm">
+    <div class="modal__box addProject">
+        <div class="modal__container w-7x">
+            <div class="form-loader">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="modal__header">
+                <p data-title="Nouveau projet">Nouveau projet</p>
+                <i class="fi-rr-cross close__modal"></i>
+            </div>
+            <div class="modal__body" style="padding-bottom: .5em;">
+                <form action="" method="post">
+                    <div class="field ">
+                        <div class="input-area">
+                            <input autocomplete="off" type="text" data-control="noEmpty" maxlength="255" is=""
+                                   placeholder=" " value="" id="projet" name="projet">
+                            <label for="projet">Projet</label>
+                            <i class="error error-icon fi-rr-exclamation" title="champ obligatoire"></i>
+                        </div>
+                        <div class="error error-txt">Veuillez renseigner cet champ</div>
+                    </div>
+                    <div class="field">
+                        <div class="input-area">
+                            <select name="projet_enqueteurs" id="projet_enqueteurs" data-control="noEmpty"
+                                    is="custom-select" placeholder=" ">
+                                <option data-placeholder="true">Enqueteurs</option>
+                            </select>
+                            <label for="projet_enqueteurs">Enqueteurs</label>
+                            <i class="error error-icon fi-rr-exclamation" title="champ obligatoire"></i>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="input-area">
+                            <textarea style="height: 250px;" autocomplete="off" is="" name="description" id="description" placeholder=" " data-control=""></textarea>
+                            <label for="description">Description</label>
+                            <i class="error error-icon fi-rr-exclamation" title="champ obligatoire"></i>
+                        </div>
+                        <div class="error error-txt">Veuillez renseigner cet champ</div>
+                    </div>
+                </form>
+            </div>
+            <p class="required__placeholder"><i class="fi-rr-exclamation"></i> champs obligatoires</p>
+            <div class="modal__footer">
+                <input class="close__modal" type="reset" value="Annuler">
+                <input type="submit" class="modalForm__submit saveProjet" name="add" value="Enregistrer">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

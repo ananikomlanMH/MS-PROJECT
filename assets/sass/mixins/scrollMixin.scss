@@ -1,0 +1,29 @@
+@mixin scrollBar{
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+
+    &::-webkit-scrollbar-thumb {
+        width: 0;
+        background: #e3e3e3;
+        transition: .5s ease;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+
+        &:hover{
+            background: lightgrey;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        width: 10px;
+        background: var(--scrool-background);
+
+        transition: .5s ease-in-out;
+
+        &:hover{
+            background: rgba(211, 211, 211, 0.4);
+        }
+    }
+}
